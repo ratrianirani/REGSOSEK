@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Regsosek - hehe</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets-creative/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css-creative/styles.css" rel="stylesheet" />
+    </head>
+    <body style="background-color: #C5C9CC;">
+        <nav class="navbar navbar navbar-expand d-flex justify-content-between navbar-light bg-white topbar mb-4 static-top shadow">
+            <div class="container-xl">
+                <a class="nav-link ml-5">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 h6" style="font-family: 'Arial'; font-style: italic; font-weight:bold;">
+                        BPS PROVINSI SULAWESI UTARA</span>
+                </a>
+                <ul class="navbar-nav ml-auto">
+                    <div class="topbar-divider d-none d-sm-block"></div>
+                    <a class="nav-link">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Pengguna</span>
+                                    <img class="" src="">
+                                </a>    
+                </ul>
+            </div>
+        </nav>
+        <div class="container-xl">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">I. KETERANGAN TEMPAT</div>
+                </div>
+                <div class="container-fluid p-2">
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">101. Provinsi</label>
+                                    <div class="col-6">
+                                        <input type="text" id="r101" class="form-control" name="r101" disabled="disabled">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">102. Kabupaten/Kota</label>
+                                    <div class="col-6">
+                                        <select id="r102" class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Kabupaten/Kota</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">103. Kecamatan</label>
+                                    <div class="col-6">
+                                        <select id="r103" class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Kecamatan</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">104. Desa/Kelurahan</label>
+                                    <div class="col-6">
+                                        <select id="r104" class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Desa/Kelurahan</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">105. Kode SLS/Non SLS</label>
+                                    <div class="col-6">
+                                        <select id="r105" class="form-select" aria-label="Default select example">
+                                            <option selected>Pilih Kode SLS/Non SLS</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">106. Nama SLS/Non SLS</label>
+                                    <div class="col-6">
+                                        <input type="text" id="r106" class="form-control" name="r106" disabled="disabled">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">107. Alamat</label>
+                                    <div class="col-6">
+                                        <textarea id="r107" class="form-control" name="r107" rows="5" disabled="disabled"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">108. Nama Kepala Keluarga</label>
+                                    <div class="col-6">
+                                        <input type="text" id="r108" class="form-control" name="r108">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">109. Nomor Urut Bangunan Tempat Tinggal</label>
+                                    <div class="col-6">
+                                        <input type="text" id="r109" class="form-control" name="r109" disabled="disabled">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">110. Nomor Urut Keluarga Hasil Verifikasi</label>
+                                        <div class="col-6">
+                                            <input type="text" id="r110" class="form-control" name="r110">
+                                        </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">111. Status Keluarga</label>
+                                        <div class="col-6">
+                                            <input type="text" id="r111" class="form-control" name="r111">
+                                        </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">112. Jumlah Anggota Keluarga</label>
+                                        <div class="col-6">
+                                            <input type="text" id="r112" class="form-control" name="r112">
+                                        </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">113. ID Landmark Wilkerstat</label>
+                                        <div class="col-6">
+                                            <input type="text" id="r113" class="form-control" name="r113" disabled="disabled">
+                                        </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">114. Nomor Kartu Keluarga</label>
+                                        <div class="col-6">
+                                            <input type="text" id="r114" class="form-control" name="r114">
+                                        </div>
+                                </div>
+                                <div class="form-group mb-2 row">
+                                    <label class="form-label col-md-6 col-form-label">115. Kode Kartu Keluarga</label>
+                                        <div class="col-6">
+                                            <input type="text" id="r115" class="form-control" name="r115">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+            <div class="card mb-5">
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">III. KETERANGAN PERUMAHAN</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">301. a. Status kepemilikan bangunan tempat tinggal yang ditempati  </label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r301a" role="radiogroup" aria-required="true">
+                                        <input type="radio" id="r301a[1]" name="r301a" value="1">
+                                        <label for="r301a[1]">1. Milik sendiri</label>
+                                        <input type="radio" id="r301a[2]" name="r301a" value="2">
+                                        <label for="r301a[2]">2. Kontrak/Sewa</label>
+                                        <input type="radio" id="r301a[3]" name="r301a" value="3">
+                                        <label for="r301a[3]">3. Bebas sewa</label>
+                                        <input type="radio" id="r301a[4]" name="r301a" value="4">
+                                        <label for="r301a[4]">4. Dinas</label>
+                                        <input type="radio" id="r301a[5]" name="r301a" value="5">
+                                        <label for="r301a[5]">5. Lainnya</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">301. b. Apa jenis bukti kepemilikan tanah bangunan tempat tinggal ini  </label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r301b" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r301b[1]" name="r301b" value="1">
+                                            <label for="r301b[1]">1. SHM atas Nama Anggota Keluarga</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r301b[2]" name="r301b" value="2">
+                                            <label for="r301b[2]">2. SHM bukan a.n Anggota Keluarga dengan perjanjian pemanfaatan tertulis</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r301b[3]" name="r301b" value="3">
+                                            <label for="r301b[3]">3. SHM bukan a.n Anggota Keluarga tanpa perjanjian pemanfaatan tertulis</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r301b[4]" name="r301b" value="4">
+                                            <label for="r301b[4]">4. Sertifikat selain SHM (SHGB, SHSRS)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r301b[5]" name="r301b" value="5">
+                                            <label for="r301b[5]">5. Surat bukti lainnya (Girik, Letter C, dll)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r301b[6]" name="r301b" value="6">
+                                            <label for="r301b[6]">6. Tidak Punya</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">302. Luas lantai bangunan tempat tinggal</label>
+                                        <div class="col">
+                                            <input type="text" id="r302" class="form-control" name="r302">
+                                        </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">303. Jenis lantai terluas  </label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r303" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r303[1]" name="r303" value="1">
+                                            <label for="r303[1]">1. Marmer/granit</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r303[2]" name="r303" value="2">
+                                            <label for="r303[2]">2. Keramik</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r303[3]" name="r303" value="3">
+                                            <label for="r303[3]">3. Parket/vinil/karpet</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r303[4]" name="r303" value="4">
+                                            <label for="r303[4]">4. Ubin/tegel/teraso</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r303[5]" name="r303" value="5">
+                                            <label for="r303[5]">5. Kayu/papan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r303[6]" name="r303" value="6">
+                                            <label for="r303[6]">6. Semen/bata merah</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r303[7]" name="r303" value="7">
+                                            <label for="r303[7]">7. Bambu</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r303[8]" name="r303" value="8">
+                                            <label for="r303[8]">8. Tanah</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r303[9]" name="r303" value="9">
+                                            <label for="r303[9]">9. Lainnya</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">304. Jenis dinding terluas  </label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r304" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r304[1]" name="r304" value="1">
+                                            <label for="r304[1]">1. Tembok</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r304[2]" name="r304" value="2">
+                                            <label for="r304[2]">2. Plesteran anyaman bambu/kawat</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r304[3]" name="r304" value="3">
+                                            <label for="r304[3]">3. Kayu/Papan/Gypsum/GRC/Calciboard</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r304[4]" name="r304" value="4">
+                                            <label for="r304[4]">4. Anyaman bambu</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r304[5]" name="r304" value="5">
+                                            <label for="r304[5]">5. Batang kayu</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r304[6]" name="r304" value="6">
+                                            <label for="r304[6]">6. Bambu</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r304[7]" name="r304" value="7">
+                                            <label for="r304[7]">7. Lainnya</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation-->
+        
+        <!-- Portfolio-->
+        
+        <!-- Call to action-->
+        
+        <!-- Contact-->
+        
+        <!-- Footer-->
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js-creative/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
