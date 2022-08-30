@@ -170,24 +170,25 @@
                     <div class="card-body">
                         <form>
                             <div class="form-group mb-2 row">
-                                <label class="form-label col-md-3 col-form-label">301. a. Status kepemilikan bangunan tempat tinggal yang ditempati  </label>
+                                <label class="form-label col-md-3 col-form-label">301a. Status kepemilikan bangunan tempat tinggal yang ditempati  </label>
                                 <div class="col d-flex align-items-center">
                                     <div id="r301a" role="radiogroup" aria-required="true">
                                         <input type="radio" id="r301a[1]" name="r301a" value="1">
-                                        <label for="r301a[1]">1. Milik sendiri</label>
+                                        <label for="r301a[1]" style="margin-right: 1rem;">1. Milik sendiri</label>
                                         <input type="radio" id="r301a[2]" name="r301a" value="2">
-                                        <label for="r301a[2]">2. Kontrak/Sewa</label>
+                                        <label for="r301a[2]" style="margin-right: 1rem;">2. Kontrak/Sewa</label>
                                         <input type="radio" id="r301a[3]" name="r301a" value="3">
-                                        <label for="r301a[3]">3. Bebas sewa</label>
+                                        <label for="r301a[3]" style="margin-right: 1rem;">3. Bebas sewa</label>
                                         <input type="radio" id="r301a[4]" name="r301a" value="4">
-                                        <label for="r301a[4]">4. Dinas</label>
+                                        <label for="r301a[4]" style="margin-right: 1rem;">4. Dinas</label>
                                         <input type="radio" id="r301a[5]" name="r301a" value="5">
-                                        <label for="r301a[5]">5. Lainnya</label>
+                                        <label for="r301a[5]" style="margin-right: 1rem;">5. Lainnya</label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mb-3 row">
-                                <label class="form-label col-md-3 col-form-label">301. b. Apa jenis bukti kepemilikan tanah bangunan tempat tinggal ini  </label>
+                            <!-- 301b -->
+                            <div class="form-group mb-3 row" id="301b-row">
+                                <label class="form-label col-md-3 col-form-label">301b. <div style="font-weight: bold; font-style:italic;">Jika 301a berkode 1,</div>Apa jenis bukti kepemilikan tanah bangunan tempat tinggal ini  </label>
                                 <div class="col d-flex align-items-center">
                                     <div id="r301b" role="radiogroup" aria-required="true">
                                         <div class="col">
@@ -219,10 +220,11 @@
                             </div>
                             <div class="form-group mb-2 row">
                                 <label class="form-label col-md-3 col-form-label">302. Luas lantai bangunan tempat tinggal</label>
-                                        <div class="col">
-                                            <input type="text" id="r302" class="form-control" name="r302">
+                                        <div class="col-3">
+                                            <input type="number" id="r302" class="form-control" name="r302" min="1" max="997">
                                         </div>
                             </div>
+                            <!-- #303 -->
                             <div class="form-group mb-3 row">
                                 <label class="form-label col-md-3 col-form-label">303. Jenis lantai terluas  </label>
                                 <div class="col d-flex align-items-center">
@@ -301,6 +303,274 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="form-group mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">305. Jenis atap terluas  </label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r305" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r305[1]" name="r305" value="1">
+                                            <label for="r305[1]">1. Beton</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r305[2]" name="r305" value="2">
+                                            <label for="r305[2]">2. Genteng</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r305[3]" name="r305" value="3">
+                                            <label for="r305[3]">3. Seng</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r305[4]" name="r305" value="4">
+                                            <label for="r305[4]">4. Asbes</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r305[5]" name="r305" value="5">
+                                            <label for="r305[5]">5. Bambu</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r305[6]" name="r305" value="6">
+                                            <label for="r305[6]">6. Kayu/sirap</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r305[7]" name="r305" value="7">
+                                            <label for="r305[7]">7. Jerami/ijuk/daun-daunan/rumbia</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r305[8]" name="r305" value="8">
+                                            <label for="r305[8]">8. Lainnya</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 306a -->
+                            <div class="form-group mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">306a. Sumber air minum utama  </label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r306a" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r306a[1]" name="r306a" value="1">
+                                            <label for="r306a[1]">1. Air kemasan bermerk</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[2]" name="r306a" value="2">
+                                            <label for="r306a[2]">2. Air isi ulang</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[3]" name="r306a" value="3">
+                                            <label for="r306a[3]">3. Leding</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[4]" name="r306a" value="4">
+                                            <label for="r306a[4]">4. Sumur bor/pompa</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[5]" name="r306a" value="5">
+                                            <label for="r306a[5]">5. Sumur terlindung</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[6]" name="r306a" value="6">
+                                            <label for="r306a[6]">6. Sumur tak terlindung</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[7]" name="r306a" value="7">
+                                            <label for="r306a[7]">7. Mata air terlindung</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[8]" name="r306a" value="8">
+                                            <label for="r306a[8]">8. Mata air tak terlindung</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[9]" name="r306a" value="9">
+                                            <label for="r306a[9]">9. Air permukaan (sungai/danau/waduk/kolam/irigasi)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[10]" name="r306a" value="10">
+                                            <label for="r306a[10]">10. Air hujan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r306a[11]" name="r306a" value="11">
+                                            <label for="r306a[11]">11. Lainnya</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row" id="306b-row">
+                                <label class="form-label col-md-3 col-form-label">306b. <div style="font-weight: bold; font-style:italic;">Jika 306a berkode 4, 5, 6, 7, atau 8,</div>Seberapa jauh jarak sumber air minum utama ke tempat penampungan limbah/kotoran/tinja terdekat?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r306b" role="radiogroup" aria-required="true">
+                                            <input type="radio" id="r306b[1]" name="r306b" value="1">
+                                            <label for="r306b[1]" style="margin-right: 1rem;">1. < 10 meter</label>
+                                            <input type="radio" id="r306b[2]" name="r306b" value="2">
+                                            <label for="r306b[2]" style="margin-right: 1rem;">2. ≥ 10 meter</label>
+                                            <input type="radio" id="r306b[8]" name="r306b" value="8">
+                                            <label for="r306b[8]" style="margin-right: 1rem;">8. Tidak tahu</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">307a. Sumber penerangan utama</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r307" role="radiogroup" aria-required="true">
+                                            <input type="radio" id="r307[1]" name="r307" value="1">
+                                            <label for="r307[1]" style="margin-right: 1rem;">1. Listrik PLN dengan meteran</label>
+                                            <input type="radio" id="r307[2]" name="r307" value="2">
+                                            <label for="r307[2]" style="margin-right: 1rem;">2. Listrik PLN tanpa meteran</label>
+                                            <input type="radio" id="r307[3]" name="r307" value="3">
+                                            <label for="r307[3]" style="margin-right: 1rem;">3. Listrik Non-PLN</label>
+                                            <input type="radio" id="r307[4]" name="r307" value="4">
+                                            <label for="r307[4]" style="margin-right: 1rem;">4. Bukan listrik</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 308, ada 00 meledak-->
+                            <div class="form-group mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">308. Bahan bakar/energi utama untuk memasak  </label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r308" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r308[1]" name="r308" value="1">
+                                            <label for="r308[1]">1. Listrik</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[2]" name="r308" value="2">
+                                            <label for="r308[2]">2. Gas elpiji 5,5kg/blue gaz</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[3]" name="r308" value="3">
+                                            <label for="r308[3]">3. Gas elpiji 12kg</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[4]" name="r308" value="4">
+                                            <label for="r308[4]">4. Gas elpiji 3kg</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[6]" name="r308" value="6">
+                                            <label for="r308[6]">6. Biogas</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[7]" name="r308" value="7">
+                                            <label for="r308[7]">7. Minyak tanah</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[8]" name="r308" value="8">
+                                            <label for="r308[8]">8. Briket</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[9]" name="r308" value="9">
+                                            <label for="r308[9]">9. Arang</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[10]" name="r308" value="10">
+                                            <label for="r308[10]">10. Kayu bakar</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[11]" name="r308" value="11">
+                                            <label for="r308[11]">11. Lainnya</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r308[00]" name="r308" value="00">
+                                            <label for="r308[00]">00. Tidak memasak di rumah</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">309a. Kepemilikan dan penggunaan fasilitas tempat buang air besar</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r309a" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r309a[1]" name="r309a" value="1">
+                                            <label for="r309a[1]">1. Ada, digunakan hanya Anggota Keluarga sendiri</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r309a[2]" name="r309a" value="2">
+                                            <label for="r309a[2]">2. Ada, digunakan bersama Anggota Keluarga dari keluarga tertentu</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r309a[3]" name="r309a" value="3">
+                                            <label for="r309a[3]">3. Ada, di MCK komunal</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r309a[4]" name="r309a" value="4">
+                                            <label for="r309a[4]">4. Ada, di MCK umum/siapapun menggunakan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r309a[5]" name="r309a" value="5">
+                                            <label for="r309a[5]">5. Ada, Anggota Keluarga tidak menggunakan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r309a[6]" name="r309a" value="6">
+                                            <label for="r309a[6]">6. Tidak ada fasilitas</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row" id="309b-row">
+                                <label class="form-label col-md-3 col-form-label">309b. <div style="font-weight: bold; font-style:italic;">Jika 309a berkode 1, 2, atau 3, </div>Jenis kloset</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r309b" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r309b[1]" name="r309b" value="1">
+                                            <label for="r309b[1]">1. Leher angsa</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r309b[2]" name="r309b" value="2">
+                                            <label for="r309b[2]">2. Plengsengan dengan tutup</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r309b[3]" name="r309b" value="3">
+                                            <label for="r309b[3]">3. Plengsengan tanpa tutup</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r309b[4]" name="r309b" value="4">
+                                            <label for="r309b[4]">4. Cemplung/cubluk</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">310. Tempat pembuangan akhir tinja</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r310" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r310[1]" name="r310" value="1">
+                                            <label for="r310[1]">1. Tangki septik</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r310[2]" name="r310" value="2">
+                                            <label for="r310[2]">2. IPAL</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r310[3]" name="r310" value="3">
+                                            <label for="r310[3]">3. Kolam/sawah/sungai/danau/laut</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r310[4]" name="r310" value="4">
+                                            <label for="r310[4]">4. Lubang tanah</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r310[5]" name="r310" value="5">
+                                            <label for="r310[5]">5. Pantai/tanah lapang/kebun</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r310[6]" name="r310" value="6">
+                                            <label for="r310[6]">6. Lainnya</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-5">
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">IV. KETERANGAN SOSIAL EKONOMI ANGGOTA KELUARGA</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+
                         </form>
                     </div>
                 </div>
