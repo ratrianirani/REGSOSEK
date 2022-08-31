@@ -672,13 +672,13 @@
                             <div class="form-group bordered-form p-2 mb-2 row">
                                 <label class="form-label col-md-3 col-form-label">406. Tanggal lahir</label>
                                         <div class="col-1">
-                                            <input type="number" id="r406" class="form-control" name="r406" min="1" max="31">
+                                            <input type="number" id="r406tgl" class="form-control" name="r406tgl" min="1" max="31">
                                         </div>
                                         <div class="col-1">
-                                            <input type="number" id="r406" class="form-control" name="r406" min="1" max="12">
+                                            <input type="number" id="r406bln" class="form-control" name="r406bln" min="1" max="12">
                                         </div>
                                         <div class="col-2">
-                                            <input type="number" id="r406" class="form-control" name="r406" min="1920" max="2022">
+                                            <input type="number" id="r406thn" class="form-control" name="r406thn" min="1920" max="2022">
                                         </div>
                             </div>
                             <!-- 408 -->
@@ -763,6 +763,91 @@
                                     </div>
                                 </div>
                             </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">B. PENDIDIKAN (ANGGOTA KELUARGA USIA 5 TAHUN KE ATAS)</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">412. Partisipasi sekolah</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r412" role="radiogroup" aria-required="true">
+                                            <input type="radio" id="r412[1]" name="r412" value="1">
+                                            <label for="r412[1]" style="margin-right: 1rem;">1. Tidak/belum pernah sekolah</label>
+                                            <input type="radio" id="r412[2]" name="r412" value="2">
+                                            <label for="r412[2]" style="margin-right: 1rem;">2. Masih sekolah</label>
+                                            <input type="radio" id="r412[3]" name="r412" value="3">
+                                            <label for="r412[3]" style="margin-right: 1rem;">3. Tidak bersekolah lagi</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 413 -->
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">413. Jenjang dan jenis pendidikan tertinggi yang pernah/sedang diduduki</label>
+                                        <div class="col-1">
+                                            <input type="text" id="r413" class="form-control" name="r413">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">414. Kelas tertinggi yang pernah/sedang diduduki <br> 1, 2, 3, 4, 5, 6, 7, 8 (Tamat & Lulus)</label>
+                                        <div class="col-1">
+                                            <input type="number" id="r414" class="form-control" name="r414" min="1" max="8">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">415. Ijazah/STTB tertinggi yang dimiliki</label>
+                                        <div class="col-1">
+                                            <input type="text" id="r415" class="form-control" name="r415">
+                                        </div>
+                            </div>
+                            <div class="bordered-form row mb-3">
+                            <div class="form-group p-2 mb-2 row">
+                                <label class="form-label col col-form-label" style="font-weight: bold; font-style:italic;">Kode 413: Jenjang dan jenis pendidikan dan Kode 415: Ijazah/STTB</label>
+                            </div>
+                            <!-- petunjuk utk jenjang pendidikan dan ijazah -->
+                            <div class="form-group p-2 mb-2 row">
+                                <div class="col d-flex flex-column">
+                                    <label>01. Paket A</label>
+                                    <label>02. SDLB</label>
+                                    <label>03. SD</label>
+                                    <label>04. MI</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>05. SPM/PDF Ula</label>
+                                    <label>06. Paket B</label>
+                                    <label>07. SMPLB</label>
+                                    <label>08. SMP</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>09. MTs</label>
+                                    <label>10. SPM/PDF Wustha</label>
+                                    <label>11. Paket C</label>
+                                    <label>12. SMALB</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>13. SMA</label>
+                                    <label>14. MA</label>
+                                    <label>15. SMK</label>
+                                    <label>16. MAK</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>17. SPM/PDF Ulya</label>
+                                    <label>18. D1/D2/D3</label>
+                                    <label>19. D4/S1</label>
+                                    <label>20. Profesi</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>21. S2</label>
+                                    <label>22. S3</label>
+                                    <label>23. Tidak Punya Ijazah SD</label>
+                                </div>
+                            </div>
+                            </div>
+
                         </form>
                     </div>
                 </div>
