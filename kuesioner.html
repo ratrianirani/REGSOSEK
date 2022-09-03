@@ -225,6 +225,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- number -->
                             <div class="form-group bordered-form p-2 mb-2 row align-items-center">
                                 <label class="form-label col-md-3 col-form-label">302. Luas lantai bangunan tempat tinggal</label>
                                         <div class="col-3">
@@ -786,13 +787,13 @@
                                 </div>
                             </div>
                             <!-- 413 -->
-                            <div class="form-group bordered-form p-2 mb-2 row">
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
                                 <label class="form-label col-md-3 col-form-label">413. Jenjang dan jenis pendidikan tertinggi yang pernah/sedang diduduki</label>
                                         <div class="col-1">
                                             <input type="text" id="r413" class="form-control" name="r413">
                                         </div>
                             </div>
-                            <div class="form-group bordered-form p-2 mb-2 row">
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
                                 <label class="form-label col-md-3 col-form-label">414. Kelas tertinggi yang pernah/sedang diduduki <br> 1, 2, 3, 4, 5, 6, 7, 8 (Tamat & Lulus)</label>
                                         <div class="col-1">
                                             <input type="number" id="r414" class="form-control" name="r414" min="1" max="8">
@@ -848,6 +849,146 @@
                             </div>
                             </div>
 
+                        </form>
+                    </div>
+                </div>
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">C. KETENAGAKERJAAN (ANGGOTA KELUARGA USIA 5 TAHUN KE ATAS)</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <!-- ya tidak -->
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">416a. Apakah (Nama) bekerja/membantu bekerja selama seminggu yang lalu?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r416a" role="radiogroup" aria-required="true">
+                                        <input type="radio" id="r416a[1]" name="r416a" value="1">
+                                        <label for="r416a[1]" style="margin-right: 1rem;">1. Ya</label>
+                                        <input type="radio" id="r416a[2]" name="r416a" value="2">
+                                        <label for="r416a[2]" style="margin-right: 1rem;">2. Tidak</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">416b. Berapa jam (Nama) bekerja?</label>
+                                        <div class="col-1">
+                                            <input type="number" id="r416b" class="form-control" name="r416b" min="1" max="168">
+                                        </div>
+                                        <label class="form-label col-1 col-form-label">Jam</label>
+                            </div>
+                            <!-- 417 -->
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">417. Lapangan usaha dari pekerjaan utama</label>
+                                        <div class="col-1">
+                                            <input type="text" id="r417" class="form-control" name="r417">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">418. Status dalam pekerjaan utama</label>
+                                        <div class="col-1">
+                                            <input type="text" id="r418" class="form-control" name="r418">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">419. Apakah (Nama) memiliki NPWP?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r419" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r419[1]" name="r419" value="1">
+                                            <label for="r419[1]">1. Ada, dapat menunjukkan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r419[2]" name="r419" value="2">
+                                            <label for="r419[2]">2. Ada, tidak dapat menunjukkan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r419[3]" name="r419" value="3">
+                                            <label for="r419[3]">3. Tidak ada</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">D. KEPEMILIKAN USAHA (ANGGOTA KELUARGA USIA 5 TAHUN KE ATAS)</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <!-- ya tidak -->
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">420. Apakah (Nama) memiliki usaha sendiri/bersama?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r420" role="radiogroup" aria-required="true">
+                                        <input type="radio" id="r420[1]" name="r420" value="1">
+                                        <label for="r420[1]" style="margin-right: 1rem;">1. Ya</label>
+                                        <input type="radio" id="r420[2]" name="r420" value="2">
+                                        <label for="r420[2]" style="margin-right: 1rem;">2. Tidak</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">421. Apakah lapangan usaha dari usaha tersebut</label>
+                                        <div class="col-1">
+                                            <input type="text" id="r421" class="form-control" name="r421">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row align-items-center">
+                                <label class="form-label col-md-3 col-form-label">422. Jumlah pekerja yang dibayar</label>
+                                        <div class="col-3">
+                                            <input type="number" id="r422" class="form-control" name="r422" min="1" max="999">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row align-items-center">
+                                <label class="form-label col-md-3 col-form-label">423. Jumlah pekerja yang tidak dibayar</label>
+                                        <div class="col-3">
+                                            <input type="number" id="r423" class="form-control" name="r423" min="1" max="99">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">424. Kepemilikan perizinan usaha</label>
+                                        <div class="col-1">
+                                            <input type="text" id="r424" class="form-control" name="r424">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">425. Omzet usaha perbulan (Rupiah)</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r425" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" id="r425[1]" name="r425" value="1">
+                                            <label for="r425[1]">1.) < 5 Juta (ultra mikro)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r425[2]" name="r425" value="2">
+                                            <label for="r425[2]">2.) 5 ─ < 15 Juta (ultra mikro)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r425[3]" name="r425" value="3">
+                                            <label for="r425[3]">3.) 15 ─ < 25 Juta (ultra mikro)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r425[4]" name="r425" value="4">
+                                            <label for="r425[4]">4.) 25 ─ < 167 Juta (mikro)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r425[5]" name="r425" value="5">
+                                            <label for="r425[5]">5.) 167 ─ < 1.250 Juta (kecil)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r425[6]" name="r425" value="6">
+                                            <label for="r425[6]">6.) 1.250 ─ < 4.167 Juta (menengah)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" id="r425[7]" name="r425" value="7">
+                                            <label for="r425[7]">7.) ≥ 4.167 Juta (besar)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>
