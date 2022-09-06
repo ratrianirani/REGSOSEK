@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Regsosek - hehe</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets-creative/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <script src="js-creative/string-validation.js"></script>
+        <!-- datepickerplugincaranya 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" /> -->
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css-creative/styles.css" rel="stylesheet" />
+    </head>
+    <body style="background-color: #C5C9CC;">
+        <nav class="navbar navbar navbar-expand d-flex justify-content-between navbar-light bg-white topbar mb-4 static-top shadow">
+            <div class="container-xl">
+                <a class="nav-link ml-5">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 h6" style="font-family: 'Arial'; font-style: italic; font-weight:bold;">
+                        BPS PROVINSI SULAWESI UTARA</span>
+                </a>
+                <ul class="navbar-nav ml-auto">
+                    <div class="topbar-divider d-none d-sm-block"></div>
+                    <a class="nav-link">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Pengguna</span>
+                                    <img class="" src="">
+                                </a>    
+                </ul>
+            </div>
+        </nav>
+        <div class="container-xl">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">IV. KETERANGAN SOSIAL EKONOMI ANGGOTA KELUARGA</div>
+                </div>
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">A. KETERANGAN DEMOGRAFI</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">401. Nomor urut anggota keluarga</label>
+                                        <div class="col-sm-1">
+                                            <input type="number" id="r401" class="form-control" name="r401" min="1" max="20">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">402. Nama anggota keluarga</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" id="r402" class="form-control" name="r402">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">403. Nomor Induk Kependudukan (NIK)</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" id="r403" class="form-control" name="r403">
+                                        </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">404. Keterangan keberadaan anggota keluarga</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r404" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r404[1]" name="r404" value="1">
+                                            <label for="r404[1]">1. Tinggal bersama keluarga</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r404[2]" name="r404" value="2">
+                                            <label for="r404[2]">2. Meninggal</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r404[3]" name="r404" value="3">
+                                            <label for="r404[3]">3. Tidak tinggal bersama keluarga/pindah</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r404[4]" name="r404" value="4">
+                                            <label for="r404[4]">4. Anggota keluarga baru</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r404[5]" name="r404" value="5">
+                                            <label for="r404[5]">5. Tidak ditemukan</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Jenis Kelamin -->
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">405. Jenis Kelamin</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r405" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r405[1]" name="r405" value="1">
+                                            <label for="r405[1]" style="margin-right: 1rem;">1. Laki-laki</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r405[2]" name="r405" value="2">
+                                            <label for="r405[2]" style="margin-right: 1rem;">2. Perempuan</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tanggal lahir -->
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">406. Tanggal lahir</label>
+                                        <div class="col-md-5 d-flex align-items-center">
+                                            <input type="number" id="r406tgl" class="form-control" name="r406tgl" min="1" max="31" style="width:5rem; margin-right:0.5rem;">
+                                            <input type="number" id="r406bln" class="form-control" name="r406bln" min="1" max="12" style="width:5rem; margin-right:0.5rem;">
+                                            <input type="number" id="r406thn" class="form-control" name="r406thn" min="1920" max="2022" style="width:7rem; margin-right:0.5rem;">
+                                        </div>
+                            </div>
+                            <!-- 408 -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">408. Status Perkawinan</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r408" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r408[1]" name="r408" value="1">
+                                            <label for="r408[1]" style="margin-right: 1rem;">1. Belum kawin</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r408[2]" name="r408" value="2">
+                                            <label for="r408[2]" style="margin-right: 1rem;">2. Kawin/nikah</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r408[3]" name="r408" value="3">
+                                            <label for="r408[3]" style="margin-right: 1rem;">3. Cerai hidup</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r408[4]" name="r408" value="4">
+                                            <label for="r408[4]" style="margin-right: 1rem;">4. Cerai mati</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">409. Sumber air minum utama  </label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r409" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r409[1]" name="r409" value="1">
+                                            <label for="r409[1]">1. Kepala keluarga</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r409[2]" name="r409" value="2">
+                                            <label for="r409[2]">2. Istri/suami</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r409[3]" name="r409" value="3">
+                                            <label for="r409[3]">3. Anak</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r409[4]" name="r409" value="4">
+                                            <label for="r409[4]">4. Menantu</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r409[5]" name="r409" value="5">
+                                            <label for="r409[5]">5. Cucu</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r409[6]" name="r409" value="6">
+                                            <label for="r409[6]">6. Orangtua/mertua</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r409[7]" name="r409" value="7">
+                                            <label for="r409[7]">7. Pembantu/sopir</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r409[8]" name="r409" value="8">
+                                            <label for="r409[8]">8. Lainnya</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">410. <div style="font-weight: bold; font-style:italic;">Jika (Nama) merupakan wanita berusia 10-54 tahun dan 408 berkode 2,3 atau 4, </div>Apakah saat ini (Nama) sedang hamil?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r410" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r410[1]" name="r410" value="1">
+                                            <label for="r410[1]" style="margin-right: 1rem;">1. Ya</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r410[2]" name="r410" value="2">
+                                            <label for="r410[2]" style="margin-right: 1rem;">2. Tidak</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 411 -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">411. Apakah (Nama) memiliki kartu identitas?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r411" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r411[0]" name="r411" value="0">
+                                            <label for="r411[0]" style="margin-right: 1rem;">0. Tidak memiliki</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r411[1]" name="r411" value="1">
+                                            <label for="r411[1]" style="margin-right: 1rem;">1. Akta kelahiran</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r411[2]" name="r411" value="2">
+                                            <label for="r411[2]" style="margin-right: 1rem;">2. KIA</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r411[4]" name="r411" value="4">
+                                            <label for="r411[4]" style="margin-right: 1rem;">4. KTP</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">B. PENDIDIKAN (ANGGOTA KELUARGA USIA 5 TAHUN KE ATAS)</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">412. Partisipasi sekolah</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r412" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r412[1]" name="r412" value="1">
+                                            <label for="r412[1]" style="margin-right: 1rem;">1. Tidak/belum pernah sekolah</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r412[2]" name="r412" value="2">
+                                            <label for="r412[2]" style="margin-right: 1rem;">2. Masih sekolah</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r412[3]" name="r412" value="3">
+                                            <label for="r412[3]" style="margin-right: 1rem;">3. Tidak bersekolah lagi</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 413 -->
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">413. Jenjang dan jenis pendidikan tertinggi yang pernah/sedang diduduki</label>
+                                <div class="col-md-5">
+                                    <input type="text" id="r413" class="form-control" name="r413" style="width: 4rem;">
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">414. Kelas tertinggi yang pernah/sedang diduduki <br> 1, 2, 3, 4, 5, 6, 7, 8 (Tamat & Lulus)</label>
+                                <div class="col-md-5">
+                                    <input type="number" id="r414" class="form-control" name="r414" min="1" max="8" style="width: 4rem;">
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">415. Ijazah/STTB tertinggi yang dimiliki</label>
+                                <div class="col-md-5">
+                                    <input type="text" id="r415" class="form-control" name="r415" style="width: 4rem;">
+                                </div>
+                            </div>
+                            <div class="bordered-form row mb-3">
+                            <div class="form-group p-2 mb-2 row">
+                                <label class="form-label col col-form-label" style="font-weight: bold; font-style:italic;">Kode 413: Jenjang dan jenis pendidikan dan Kode 415: Ijazah/STTB</label>
+                            </div>
+                            <!-- petunjuk utk jenjang pendidikan dan ijazah -->
+                            <div class="form-group p-2 mb-2 row">
+                                <div class="col d-flex flex-column">
+                                    <label>01. Paket A</label>
+                                    <label>02. SDLB</label>
+                                    <label>03. SD</label>
+                                    <label>04. MI</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>05. SPM/PDF Ula</label>
+                                    <label>06. Paket B</label>
+                                    <label>07. SMPLB</label>
+                                    <label>08. SMP</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>09. MTs</label>
+                                    <label>10. SPM/PDF Wustha</label>
+                                    <label>11. Paket C</label>
+                                    <label>12. SMALB</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>13. SMA</label>
+                                    <label>14. MA</label>
+                                    <label>15. SMK</label>
+                                    <label>16. MAK</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>17. SPM/PDF Ulya</label>
+                                    <label>18. D1/D2/D3</label>
+                                    <label>19. D4/S1</label>
+                                    <label>20. Profesi</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>21. S2</label>
+                                    <label>22. S3</label>
+                                    <label>23. Tidak Punya Ijazah SD</label>
+                                </div>
+                            </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">C. KETENAGAKERJAAN (ANGGOTA KELUARGA USIA 5 TAHUN KE ATAS)</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <!-- ya tidak -->
+                            <div class="form-group bordered-form p-2 mb-2 row">
+                                <label class="form-label col-md-3 col-form-label">416a. Apakah (Nama) bekerja/membantu bekerja selama seminggu yang lalu?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r416a" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r416a[1]" name="r416a" value="1">
+                                            <label for="r416a[1]" style="margin-right: 1rem;">1. Ya</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r416a[2]" name="r416a" value="2">
+                                            <label for="r416a[2]" style="margin-right: 1rem;">2. Tidak</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">416b. Berapa jam (Nama) bekerja?</label>
+                                <div class="col-md-5 d-flex align-items-center">
+                                    <input type="number" id="r416b" class="form-control" name="r416b" min="1" max="168" style="width: 4rem; margin-right: 1rem;">
+                                    <label class="form-label col-form-label">Jam</label>
+                                </div>
+                            </div>
+                            <!-- 417 -->
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">417. Lapangan usaha dari pekerjaan utama</label>
+                                <div class="col-md-5">
+                                    <input type="text" id="r417" class="form-control" name="r417" style="width: 4rem;">
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">418. Status dalam pekerjaan utama</label>
+                                <div class="col-md-5">
+                                    <input type="text" id="r418" class="form-control" name="r418" style="width: 4rem;">
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">419. Apakah (Nama) memiliki NPWP?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r419" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r419[1]" name="r419" value="1">
+                                            <label for="r419[1]">1. Ada, dapat menunjukkan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r419[2]" name="r419" value="2">
+                                            <label for="r419[2]">2. Ada, tidak dapat menunjukkan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r419[3]" name="r419" value="3">
+                                            <label for="r419[3]">3. Tidak ada</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">D. KEPEMILIKAN USAHA (ANGGOTA KELUARGA USIA 5 TAHUN KE ATAS)</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <!-- ya tidak -->
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">420. Apakah (Nama) memiliki usaha sendiri/bersama?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r420" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r420[1]" name="r420" value="1">
+                                            <label for="r420[1]" style="margin-right: 1rem;">1. Ya</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r420[2]" name="r420" value="2">
+                                            <label for="r420[2]" style="margin-right: 1rem;">2. Tidak</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">421. Apakah lapangan usaha dari usaha tersebut</label>
+                                <div class="col-md-5">
+                                    <input type="text" id="r421" class="form-control" name="r421" style="width: 4rem;">
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row align-items-center">
+                                <label class="form-label col-md-3 col-form-label">422. Jumlah pekerja yang dibayar</label>
+                                <div class="col-3">
+                                    <input type="number" id="r422" class="form-control" name="r422" min="1" max="999">
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row align-items-center">
+                                <label class="form-label col-md-3 col-form-label">423. Jumlah pekerja yang tidak dibayar</label>
+                                <div class="col-3">
+                                    <input type="number" id="r423" class="form-control" name="r423" min="1" max="99">
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">424. Kepemilikan perizinan usaha</label>
+                                <div class="col-3">
+                                    <input type="text" id="r424" class="form-control" name="r424">
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">425. Omzet usaha perbulan (Rupiah)</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r425" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r425[1]" name="r425" value="1">
+                                            <label for="r425[1]">1.) < 5 Juta (ultra mikro)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r425[2]" name="r425" value="2">
+                                            <label for="r425[2]">2.) 5 ─ < 15 Juta (ultra mikro)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r425[3]" name="r425" value="3">
+                                            <label for="r425[3]">3.) 15 ─ < 25 Juta (ultra mikro)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r425[4]" name="r425" value="4">
+                                            <label for="r425[4]">4.) 25 ─ < 167 Juta (mikro)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r425[5]" name="r425" value="5">
+                                            <label for="r425[5]">5.) 167 ─ < 1.250 Juta (kecil)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r425[6]" name="r425" value="6">
+                                            <label for="r425[6]">6.) 1.250 ─ < 4.167 Juta (menengah)</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r425[7]" name="r425" value="7">
+                                            <label for="r425[7]">7.) ≥ 4.167 Juta (besar)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">426. Penggunaan internet dalam kegiatan usaha</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r426" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r426[00]" name="r426" value="00">
+                                            <label for="r426[00]">00. Tidak menggunakan internet</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r426[01]" name="r426" value="01">
+                                            <label for="r426[01]">01. Sebagai sarana komunikasi</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r426[02]" name="r426" value="02">
+                                            <label for="r426[02]">02. Untuk mencari informasi</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r426[04]" name="r426" value="04">
+                                            <label for="r426[04]">04. Sebagai pemasaran/iklan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r426[08]" name="r426" value="08">
+                                            <label for="r426[08]">08. Sebagai</label>
+                                            sarana penjualan produk/output
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r426[16]" name="r426" value="16">
+                                            <label for="r426[16]">16. Sebagai</label>
+                                            pembelian dan/atau produksi
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r426[32]" name="r426" value="32">
+                                            <label for="r426[32]">32. Lainnya</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">E. KESEHATAN</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <!-- 427 -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label><b>PERTANYAAN 427 UNTUK USIA 0-4 TAHUN</b></label>
+                                <label class="form-label col-md-3 col-form-label">427. Bagaimana kondisi gizi anak dari pemeriksaan 3 bulan terakhir di posyandu/puskesmas/rumah sakit dengan mengacu pada catatan/buku kontrol?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r427" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="427" name="r427" value="1">
+                                            <label for="r427">1. Kurang gizi <i>(Wasting)</i></label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r427" name="r427" value="2">
+                                            <label for="r427">2. Kerdil <i>(Stunting)</i></label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r427" name="r427" value="3">
+                                            <label for="r427">3. Tidak ada catatan</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r427" name="r427" value="8">
+                                            <label for="r427">8. Tidak tahu</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 428 -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label><b>PERTANYAAN 428a – 428f UNTUK USIA 2 TAHUN KE ATAS</b></label>
+
+                                <!-- 428 a -->
+                                <label class="form-label col-md-3 col-form-label">428. a. Apakah (Nama) mengalami kesulitan/gangguan penglihatan meskipun menggunakan alat bantu melihat?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428a" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428a" name="r428a" value="1">
+                                            <label for="r428a">1. Ya, sama sekali tidak bisa</label>
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428a" name="r428a" value="2">
+                                            <label for="r428a">2. Ya, banyak kesulitan</label>
+                                            dan membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428a" name="r428a" value="3">
+                                            <label for="r428a">3. Ya, sedikit kesulitan,</label>
+                                            tapi tidak membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428a" name="r428a" value="4">
+                                            <label for="r428a">4. Tidak mengalami kesulitan</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 428 b -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">428. b. Apakah (Nama) mengalami kesulitan/gangguan pendengaran meskipun menggunakan alat bantu dengar?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428b" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428b" name="r428b" value="1">
+                                            <label for="r428b">1. Ya, sama sekali tidak bisa</label>
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428b" name="r428b" value="2">
+                                            <label for="r428b">2. Ya, banyak kesulitan</label>
+                                            dan membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428b" name="r428b" value="3">
+                                            <label for="r428b">3. Ya, sedikit kesulitan,</label>
+                                            tapi tidak membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428b" name="r428b" value="4">
+                                            <label for="r428b">4. Tidak mengalami kesulitan</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 428 c -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">428. c. Apakah (Nama) mengalami kesulitan/gangguan berjalan atau naik tangga?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428c" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428c" name="r428c" value="1">
+                                            <label for="r428c">1. Ya, sama sekali tidak bisa</label>
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428c" name="r428c" value="2">
+                                            <label for="r428c">2. Ya, banyak kesulitan</label>
+                                            dan membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428c" name="r428c" value="3">
+                                            <label for="r428c">3. Ya, sedikit kesulitan,</label>
+                                            tapi tidak membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428c" name="r428c" value="4">
+                                            <label for="r428c">4. Tidak mengalami kesulitan</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 428 d -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">428. d. Apakah (Nama) mengalami kesulitan/gangguan menggerakkan/menggunakan tangan/jari?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428d" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428d" name="r428d" value="1">
+                                            <label for="r428d">1. Ya, sama sekali tidak bisa</label>
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428d" name="r428d" value="2">
+                                            <label for="r428d">2. Ya, banyak kesulitan</label>
+                                            dan membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428d" name="r428d" value="3">
+                                            <label for="r428d">3. Ya, sedikit kesulitan,</label>
+                                            tapi tidak membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428d" name="r428d" value="4">
+                                            <label for="r428d">4. Tidak mengalami kesulitan</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 428 e -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">428. e. Dibandingkan dengan penduduk yang sebaya, apakah (Nama) mengalami kesulitan/gangguan dalam belajar atau kemampuan intelektual?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428e" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428e" name="r428e" value="1">
+                                            <label for="r428e">1. Ya, sama sekali tidak bisa</label>
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428e" name="r428e" value="2">
+                                            <label for="r428e">2. Ya, banyak kesulitan</label>
+                                            dan membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428e" name="r428e" value="3">
+                                            <label for="r428e">3. Ya, sedikit kesulitan,</label>
+                                            tapi tidak membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428e" name="r428e" value="4">
+                                            <label for="r428e">4. Tidak mengalami kesulitan</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 428 f -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">428. f. Dibandingkan dengan penduduk yang sebaya, apakah (Nama) mengalami kesulitan/gangguan mengendalikan perilaku?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428f" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428f" name="r428f" value="1">
+                                            <label for="r428f">1. Ya, sama sekali tidak bisa</label>
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428f" name="r428f" value="2">
+                                            <label for="r428f">2. Ya, banyak kesulitan</label>
+                                            dan membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428f" name="r428f" value="3">
+                                            <label for="r428f">3. Ya, sedikit kesulitan,</label>
+                                            tapi tidak membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428f" name="r428f" value="4">
+                                            <label for="r428f">4. Tidak mengalami kesulitan</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 428 g -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label><b>PERTANYAAN  428g – 428j UNTUK USIA 5 TAHUN KE ATAS</b></label>
+                                <label class="form-label col-md-3 col-form-label">428. g. Apakah (Nama) mengalami kesulitan/gangguan berbicara/berkomunikasi?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428g" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428g" name="r428g" value="1">
+                                            <label for="r428g">1. Ya, sama sekali tidak bisa</label>
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428g" name="r428g" value="2">
+                                            <label for="r428g">2. Ya, banyak kesulitan</label>
+                                            dan membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428g" name="r428g" value="3">
+                                            <label for="r428g">3. Ya, sedikit kesulitan,</label>
+                                            tapi tidak membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428g" name="r428g" value="4">
+                                            <label for="r428g">4. Tidak mengalami kesulitan</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- r428 h -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">428. h. Apakah (Nama) mengalami kesulitan/gangguan untuk mengurus diri sendiri? (mandi, makan, berpakaian, BAK, BAB)</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428h" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428h" name="r428h" value="1">
+                                            <label for="r428h">1. Ya, sama sekali tidak bisa</label>
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428h" name="r428h" value="2">
+                                            <label for="r428h">2. Ya, banyak kesulitan</label>
+                                            dan membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428h" name="r428h" value="3">
+                                            <label for="r428h">3. Ya, sedikit kesulitan,</label>
+                                            tapi tidak membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428h" name="r428h" value="4">
+                                            <label for="r428h">4. Tidak mengalami kesulitan</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 428 i -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">428. i. Apakah (Nama) mengalami kesulitan/gangguan mengingat/berkonsentrasi?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428i" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428i" name="r428i" value="1">
+                                            <label for="r428i">1. Ya, sama sekali tidak bisa</label>
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428i" name="r428i" value="2">
+                                            <label for="r428i">2. Ya, banyak kesulitan</label>
+                                            dan membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428i" name="r428i" value="3">
+                                            <label for="r428i">3. Ya, sedikit kesulitan,</label>
+                                            tapi tidak membutuhkan bantuan
+                                        </div>    
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428i" name="r428i" value="4">
+                                            <label for="r428i">4. Tidak mengalami kesulitan</label>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 428 j -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">428. j. Seberapa sering (Nama) mengalami gangguan kesedihan depresi?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r428j" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428j" name="r428j" value="1">
+                                            <label for="r428j">1. Sangat sering</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428j" name="r428j" value="2">
+                                            <label for="r428j">2. Sering</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428j" name="r428j" value="3">
+                                            <label for="r428j">3. Jarang</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r428j" name="r428j" value="4">
+                                            <label for="r428j">4. Tidak pernah</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 429 -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">429. <b><i>Jika (Nama) berusia 60 tahun ke atas atau 428a-j ada yang berkode 1 atau 2</i></b> <br>Apakah (Nama) memiliki caregiver/pemberi rawat/pengasuh/wali?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="r429" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r429" name="r429" value="1">
+                                            <label for="r429" style="margin-right: 1rem;">1. Ya, Anggota Keluarga</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r429" name="r429" value="2">
+                                            <label for="r429" style="margin-right: 1rem;">2. Ya, Bukan Anggota Keluarga</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="r429" name="r429" value="3">
+                                            <label for="r429" style="margin-right: 1rem;">3. Tinggal Sendiri</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 430 -->
+                            <div class="form-group bordered-form p-2 mb-2 align-items-center row">
+                                <label class="form-label col-md-3 col-form-label">430. Apakah (Nama) memiliki keluhan kesehatan kronis/menahun?</label>
+                                <div class="col-sm-1">
+                                    <input type="text" id="r430" class="form-control" name="r430">
+                                </div>
+                            </div>
+                            <div class="bordered-form row mb-3">
+                            <div class="form-group p-2 mb-2 row">
+                                <label class="form-label col col-form-label" style="font-weight: bold; font-style:italic;">Kode 430: Penyakit kronis/menahun</label>
+                            </div>
+                            <!-- Penyakit kronis/menahun -->
+                            <div class="form-group p-2 mb-2 row">
+                                <div class="col d-flex flex-column">
+                                    <label>01. Tidak Ada</label>
+                                    <label>02. Hipertensi <br>(darah tinggi)</label>
+                                    <label>03. Rematik</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>04. Asma</label>
+                                    <label>05. Masalah jantung</label>
+                                    <label>06. Diabetes <br>(kencing manis)</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>07. Tuberculosis (TBC)</label>
+                                    <label>08. Stroke</label>
+                                    <label>09. Kanker atau tumor ganas</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>10. Gagal ginjal</label>
+                                    <label>11. Haemophilia</label>
+                                    <label>12. HIV/AIDS</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>13. Kolesterol</label>
+                                    <label>14. Sirosis Hati</label>
+                                    <label>15. Thalasemia</label>
+                                </div>
+                                <div class="col d-flex flex-column">
+                                    <label>16. Leukimia</label>
+                                    <label>17. Alzheimer</label>
+                                    <label>18. Lainnya</label>
+                                </div>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-header">
+                    <div class="text-center mb-0 p-1 h4">F. PROGRAM PERLINDUNGAN SOSIAL</div>
+                </div>
+                <div class="container-fluid p-2">
+                    <div class="card-body">
+                        <form>
+                            <!-- 431 a -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">431. a. Dalam satu tahun terakhir, apakah (Nama) memiliki jaminan kesehatan? <i>(Jumlahkan Kode)</i></label>
+                                <div class="col d-flex align-items-center">
+                                    <div class="col-5 d-flex flex-column">
+                                        <label>0. Tidak Memiliki</label>
+                                        <label>1. PBI JKN</label>
+                                        <label>2. JKN Mandiri</label>
+                                        <label>4. JKN Pemberi Kerja</label>
+                                        <label>8. Jamkes Lainnya</label>
+                                        <label>99. Tidak Tahu</label>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <input type="number" id="r431a" class="form-control" name="r431a" min="0" max="99">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 431 b -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label><b>PERTANYAAN 431b - 431d UNTUK USIA 5 TAHUN KE ATAS</b></label>
+                                <label class="form-label col-md-3 col-form-label">431. b. Dalam satu tahun terakhir, apakah (Nama) ikut serta dalam Program Pra-Kerja?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="431b" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431b[1]" name="431b" value="1">
+                                            <label for="431b[1]">1. Ya</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431b[2]" name="431b" value="2">
+                                            <label for="431b[2]">2. Tidak</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431b[3]" name="431b" value="8">
+                                            <label for="431b[3]">8. Tidak Tahu</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 431 c -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">431. c. Dalam satu tahun terakhir, apakah (Nama) ikut serta dalam Program Kredit Usaha Rakyat (KUR)?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="431c" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431c[1]" name="431c" value="1">
+                                            <label for="431c[1]">1. Ya</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431c[2]" name="431c" value="2">
+                                            <label for="431c[2]">2. Tidak</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431c[3]" name="431c" value="8">
+                                            <label for="431c[3]">8. Tidak Tahu</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 431 d -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label class="form-label col-md-3 col-form-label">431. d. Dalam satu tahun terakhir, apakah (Nama) ikut serta dalam Program Pembiayaan Ultra Mikro (UMi)?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="431d" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431d[1]" name="431d" value="1">
+                                            <label for="431d[1]">1. Ya</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431d[2]" name="431d" value="2">
+                                            <label for="431d[2]">2. Tidak</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431d[3]" name="431d" value="8">
+                                            <label for="431d[3]">8. Tidak Tahu</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 431 e -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label><b>PERTANYAAN 431e UNTUK USIA 5-30 TAHUN</b></label>
+                                <label class="form-label col-md-3 col-form-label">431. e. Dalam satu tahun terakhir, apakah (Nama) ikut serta dalam Program Indonesia Pintar (PIP)?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="431e" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431e[1]" name="431e" value="1">
+                                            <label for="431e[1]">1. Ya</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431e[2]" name="431e" value="2">
+                                            <label for="431e[2]">2. Tidak</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431e[3]" name="431e" value="8">
+                                            <label for="431e[3]">8. Tidak Tahu</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 431 f -->
+                            <div class="form-group bordered-form p-2 mb-3 row">
+                                <label><b>PERTANYAAN 431f UNTUK USIA 15 TAHUN KE ATAS</b></label>
+                                <label class="form-label col-md-3 col-form-label">431. f. Dalam satu tahun terakhir, apakah (Nama) memiliki jaminan ketenagakerjaan?</label>
+                                <div class="col d-flex align-items-center">
+                                    <div id="431f" role="radiogroup" aria-required="true">
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431f[1]" name="431f" value="1">
+                                            <label for="431f[1]">1. Ya</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431f[2]" name="431f" value="2">
+                                            <label for="431f[2]">2. Tidak</label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="radio" style="margin-right: 0.5rem;" id="431f[3]" name="431f" value="8">
+                                            <label for="431f[3]">8. Tidak Tahu</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="error-list" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Daftar Error</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- content -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation-->
+        
+        <!-- Portfolio-->
+        
+        <!-- Call to action-->
+        
+        <!-- Contact-->
+        
+        <!-- Footer-->
+        <footer class="bg-white py-3 my-4">
+            <p class="text-center text-muted">Copyright: &copy; BPS Provinsi Sulawesi Utara</p>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js-creative/scripts.js"></script>
+        <!-- JS datepicker 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script> -->
+        
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

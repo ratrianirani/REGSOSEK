@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Regsosek - hehe</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets-creative/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css-creative/styles.css" rel="stylesheet" />
+        <style>
+            tbody {
+                counter-reset: row-num;
+              }
+              tbody tr {
+                counter-increment: row-num;
+              }
+              tbody tr td:first-child::before {
+                  content: counter(row-num) ". ";
+              }
+              #koseka-confirm {
+                display: none;
+              }
+        </style>
+    </head>
+    <body style="background-color: #C5C9CC;">
+        <nav class="navbar navbar navbar-expand d-flex justify-content-between navbar-light bg-white topbar mb-4 static-top shadow">
+            <div class="container-xl">
+                <a class="nav-link ml-5">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 h6">BPS PROVINSI SULAWESI UTARA</span>
+                </a>
+                <ul class="navbar-nav ml-auto">
+                    <div class="topbar-divider d-none d-sm-block"></div>
+                    <a class="nav-link">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Pengguna</span>
+                                    <img class="" src="">
+                                </a>    
+                </ul>
+            </div>
+        </nav>
+        <div class="container-xl">
+            <div class="card mb-3">
+                <div class="container-fluid p-3">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group mb-2 row"><label class="form-label col-12 col-md-3 col-form-label">Kecamatan</label>
+                            <div class="col">
+                                <div class="ui fluid search selection dropdown"><i class="dropdown icon"></i>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Pilih Kecamatan</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-2 row"><label class="form-label col-12 col-md-3 col-form-label">Desa</label>
+                            <div class="col">
+                                <div class="ui fluid search selection dropdown"><i class="dropdown icon"></i>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Pilih Desa</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-2 row"><label class="form-label col-12 col-md-3 col-form-label">SLS</label>
+                            <div  class="col">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Pilih SLS</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                </form>
+                <div class="form-group mb-2 row">
+                    <div class="col-12 col-md-3">
+                    </div>
+                    <div class="col">
+                        <div class="d-grid">
+                            <button id="select-area" class="btn btn-primary">
+                                <span class="fa fa-search me-2"></span> Cari
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <table class="table table-striped table-bordered table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="p-2">#</th>
+                                <th scope="col" class="p-2">Nama Kepala Keluarga</th>
+                                <th scope="col" class="p-2">Luas Lantai</th>
+                                <th scope="col" class="p-2">Lapangan Usaha (R417)</th>
+                                <th scope="col" class="p-2">Lapangan Usaha (R421)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>Agus</td>
+                                <td>100</td>
+                                <td>Petani</td>
+                                <td>Buruh Tani</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Budi</td>
+                                <td>100</td>
+                                <td>Pengusaha</td>
+                                <td>Manajer</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Charlie</td>
+                                <td>100</td>
+                                <td>Restoran</td>
+                                <td>Pelayan</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="text-center">Apakah isian data di atas sudah wajar?</h5>
+                </div>
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="text-center">
+                            <div id="koseka-button" role="radiogroup" aria-required="true">
+                                <input type="radio" id="ya-koseka" name="koseka-button" style="margin-right: 0.5rem;" value="1">
+                                <label for="ya-koseka" style="margin-right: 2rem;">Ya</label>
+                                <input type="radio" id="tidak-koseka" name="koseka-button" style="margin-right: 0.5rem; margin-left: 2rem;" value="2">
+                                <label for="tidak-koseka">Tidak</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="koseka-confirm" class="card-footer">
+                    <div id="koseka-yes" class="text-end">
+                        <button class="btn btn-primary">Kirim</button>
+                    </div>
+                    <div id="koseka-no" class="text-center h5">
+                        Periksa isian pada kuesioner dan hubungi PML jika diperlukan perbaikan
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation-->
+        
+        <!-- Portfolio-->
+        
+        <!-- Call to action-->
+        
+        <!-- Contact-->
+        
+        <!-- Footer-->
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js-creative/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                console.log('asu')
+                $('input[name$="koseka-button"]').click(function(){
+                    if($(this).val() == '1'){
+                        $('#koseka-confirm').show()
+                        $('#koseka-no').hide()
+                        $('#koseka-yes').show()
+                    } else {
+                        $('#koseka-yes').hide()
+                        $('#koseka-no').show()
+                    }
+                })
+            })
+        </script>
+    </body>
+</html>

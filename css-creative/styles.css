@@ -751,6 +751,12 @@ progress {
   width: 16.66666667%;
 }
 
+.col-22 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+  margin-left: 1cm;
+}
+
 .col-3 {
   flex: 0 0 auto;
   width: 25%;
