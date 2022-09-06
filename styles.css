@@ -741,16 +741,6 @@ progress {
   width: auto;
 }
 
-.col-0 {
-  flex: 0 0 auto;
-  width: 50%;
-}
-
-.col-00 {
-  flex: 0 0 auto;
-  width: 50%;
-}
-
 .col-1 {
   flex: 0 0 auto;
   width: 8.33333333%;
@@ -759,6 +749,12 @@ progress {
 .col-2 {
   flex: 0 0 auto;
   width: 16.66666667%;
+}
+
+.col-22 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+  margin-left: 1cm;
 }
 
 .col-3 {
@@ -11484,15 +11480,6 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
-}
-
-.align-title {
-  text-align: center;
-}
-
-.space {
-  padding-left: 3cm;
-  margin-left: 0.6cm;
 }
 /* footer {
   position: fixed;
