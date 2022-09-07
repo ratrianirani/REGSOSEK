@@ -6,7 +6,22 @@
 //
 // Scripts
 // 
+function edit_row(no){
+    document.getElementById('edit_button'+no).style.display="none";
+    document.getElementById("save_button"+no).style.display="block";
 
+    var name = document.getElementById('name_row'+no);
+    console.log(name);
+    var name_data = name.innerHTML;
+    
+    name.innerHTML = '<input type = "text" class="form-control" id = "name_text'+no+'" value="'+name_data+'">';    
+}
+function save_row(no){
+    var name_val=document.getElementById("name_text"+no).value;
+    document.getElementById('name_row'+no).innerHTML=name_val;
+    document.getElementById("edit_button"+no).style.display="block";
+    document.getElementById("save_button"+no).style.display="none";
+}
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function

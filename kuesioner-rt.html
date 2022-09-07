@@ -23,6 +23,17 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css-creative/styles.css" rel="stylesheet" />
+        <style type="text/css">
+            tbody {
+                counter-reset: row-num;
+              }
+              tbody tr {
+                counter-increment: row-num;
+              }
+              tbody tr td:first-child::before {
+                  content: counter(row-num) ". ";
+              }
+        </style>
     </head>
     <body style="background-color: #C5C9CC;">
         <nav class="navbar navbar navbar-expand d-flex justify-content-between navbar-light bg-white topbar mb-4 static-top shadow">
@@ -50,12 +61,12 @@
                     <form>
                         <div class="row">
                             <div class="col-sm">
-                                <div class="form-group p-1 mb-2 row">
+                                <!-- <div class="form-group p-1 mb-2 row">
                                     <label class="form-label col-sm-6 col-form-label">101. Provinsi</label>
                                     <div class="col-sm">
                                         <input type="text" id="r101" class="form-control" name="r101" disabled="disabled">
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group p-1 mb-2 row">
                                     <label class="form-label col-md-6 col-form-label">102. Kabupaten/Kota</label>
                                     <div class="col-sm">
@@ -100,7 +111,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="form-group p-1 mb-2 row">
+                                <!-- <div class="form-group p-1 mb-2 row">
                                     <label class="form-label col-md-6 col-form-label">106. Nama SLS/Non SLS</label>
                                     <div class="col-sm">
                                         <input type="text" id="r106" class="form-control" name="r106" disabled="disabled">
@@ -111,7 +122,7 @@
                                     <div class="col-sm">
                                         <textarea id="r107" class="form-control" name="r107" rows="5" disabled="disabled"></textarea>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="col-sm ">
                                 <div class="form-group p-1 mb-2 row">
@@ -120,13 +131,13 @@
                                         <input type="text" id="r108" class="form-control" name="r108">
                                     </div>
                                 </div>
-                                <div class="form-group p-1 mb-2 row">
+                                <!-- <div class="form-group p-1 mb-2 row">
                                     <label class="form-label col-md-6 col-form-label">109. Nomor Urut Bangunan Tempat Tinggal</label>
                                     <div class="col-sm">
                                         <input type="text" id="r109" class="form-control" name="r109" disabled="disabled">
                                     </div>
-                                </div>
-                                <div class="form-group p-1 mb-2 row">
+                                </div> -->
+                                <div class="form-group p-1 mb-2 align-items-center row">
                                     <label class="form-label col-md-6 col-form-label">110. Nomor Urut Keluarga Hasil Verifikasi</label>
                                         <div class="col-sm">
                                             <input type="text" id="r110" class="form-control" name="r110">
@@ -144,12 +155,12 @@
                                             <input type="text" id="r112" class="form-control" name="r112">
                                         </div>
                                 </div>
-                                <div class="form-group p-1 mb-2 row">
+                                <!-- <div class="form-group p-1 mb-2 row">
                                     <label class="form-label col-md-6 col-form-label">113. ID Landmark Wilkerstat</label>
                                         <div class="col-sm">
                                             <input type="text" id="r113" class="form-control" name="r113" disabled="disabled">
                                         </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group p-1 mb-2 row">
                                     <label class="form-label col-md-6 col-form-label">114. Nomor Kartu Keluarga</label>
                                         <div class="col-sm">
@@ -639,7 +650,34 @@
                     <div class="text-center mb-0 p-1 h4">ANGGOTA RUMAH TANGGA</div>
                 </div>
                 <div class="card-body">
-                    
+                    <form>
+                        <div class="row p-2">
+                            <table class="table table-striped table-bordered table-hover table-sm">
+                                <thead>
+                                    <th>#</th>
+                                    <th>Nama</th>
+                                </thead>
+                                <tbody>
+                                    <tr id="row1" class="align-items-center">
+                                        <td></td>
+                                        <td id="name_row1">Agus</td>
+                                        <!-- <td id="status1">Sudah</td> -->
+                                        <td>
+                                            <input type="button" id="save_button1" value="Save" class="save btn btn-primary btn-sm" onclick="save_row('1')">  
+                                            <input type="button" class="btn btn-primary btn-sm entri" id="entri_button1" value="Entri" onclick="entri_row('1')">
+                                            <input type="button" class="btn btn-success btn-sm edit" id="edit_button1" value="Edit" onclick="edit_row('1')">
+                                            <input type="button" class="btn btn-danger btn-sm delete" id="delete_button1" value="Delete" onclick="delete_row('1')">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="text" class="form-control" id="new_name"></td>
+                                        <td><input type="button" class="add btn btn-secondary btn-sm" onclick="add_row();" value="Tambah"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="card mb-3">
