@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Regsosek Sulut</title>
+        <title>META REGSOSEK</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/bg removed.png" />
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -22,9 +22,8 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">META REGSOSEK</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                
+                <a class="navbar-brand" style="font-family: 'Arial'; font-weight:bold;" href="#page-top"><img src="assets/bg removed.png" width="75" height="40" alt="logo">&ensp;META REGSOSEK</a>
+                <img src="assets/logo_crop.png" width="150" height="40" alt="logo">
             </div>
         </nav>
         <!-- Masthead-->
@@ -37,14 +36,75 @@
                     </div>
                     <div class="col-lg-9 align-self-baseline">
                         <p class="text-white-75 mb-5"></p>
-                        <a class="btn btn-primary btn-xl" href="#about">KOSEKA</a>
-                        <a class="btn btn-primary btn-xl" href="#about">PML</a>
+                        <a class="btn btn-primary btn-xl" data-bs-toggle="modal" data-bs-target="#exampleModal">KOSEKA</a>
+                        <a class="btn btn-primary btn-xl" data-bs-toggle="modal" data-bs-target="#exampleModalPML">PML</a>
                     </div>
                 </div>
             </div>
         </header>
         
-        <footer class="bg-white py-3 my-4">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login as Koseka</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>Kabupaten/Kota</option>
+                          </select>
+                        </div>
+                      
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" id="form7Example2" class="form-control" placeholder="Password"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Login</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalPML" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login as PML</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <select class="form-select" aria-label="Default select example" required="required">
+                            <option selected>Kabupaten/Kota</option>
+                          </select>
+                        </div>
+                      
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <input type="password" id="form7Example2" class="form-control" placeholder="Password" required="required"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Login</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-white py-1 my-1">
             <p class="text-center text-muted">Copyright: &copy; BPS Provinsi Sulawesi Utara</p>
         </footer>
         <!-- Bootstrap core JS-->
