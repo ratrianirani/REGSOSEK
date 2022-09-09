@@ -2181,7 +2181,7 @@ progress {
 .bordered-form {
   border-style: groove;
   border-width: 1px;
-  border-left-color: var(--bs-blue);
+  border-left-color: rgb(4,124,132);
   border-left-width: 2px;
 }
 

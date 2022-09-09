@@ -22,6 +22,19 @@ function save_row(no){
     document.getElementById("edit_button"+no).style.display="block";
     document.getElementById("save_button"+no).style.display="none";
 }
+function delete_row(no){
+    document.getElementById("row"+no+"").outerHTML="";
+}
+
+function add_row(){
+    var new_name = document.getElementById('new_name').value;
+    console.log(new_name);
+    var table = document.getElementById('anggota-keluarga');
+    var table_len = (table.rows.length)-1;
+    var row = table.insertRow(table_len).outerHTML = '<tr id="row'+table_len+'" class="align-items-center"><td></td><td id="name_row'+table_len+'">'+new_name+'</td><td><div class="d-flex flex-row"><input type="button" id="save_button'+table_len+'" value="Save" class="save btn btn-primary btn-sm me-2" style="display:none;" onclick="save_row('+table_len+')"><input type="button" class="btn btn-primary btn-sm entri me-2" id="entri_button'+table_len+'" value="Entri" onclick="entri_row('+table_len+')"><input type="button" class="btn btn-success btn-sm edit me-2" id="edit_button'+table_len+'" value="Edit" onclick="edit_row('+table_len+')"><input type="button" class="btn btn-danger btn-sm delete me-2" id="delete_button'+table_len+'" value="Delete" onclick="delete_row('+table_len+')"></div></td></tr>';
+    document.getElementById("new_name").value="";
+}
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
